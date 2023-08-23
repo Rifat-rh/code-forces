@@ -16,36 +16,15 @@ int main(){
     long long int a,b;
     a=x/z;
     b=y/z;
-    if(x*y<=z*z){
-        cout<<"1";
-    }
-    else if(y==z && x>z){
-        if(x%z!=0){
-            a++;
-            cout<<a;
-        }
-        else{
-            cout<<a;
-        }
-    }
-     else if(x==z && y>z){
-        if(y%z!=0){
-            b++;
-            cout<<b;
-        }
-        else{
-            cout<<b;
-        }
-    }
-    else{
-        if(x%z!=0){
+ 
+      if(x%z!=0){
         a++;
     }
     if(y%z!=0){
         b++;
     }
     cout<<a*b;
-    }
+    
     
     return 0;
 }
